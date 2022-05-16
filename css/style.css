@@ -290,12 +290,12 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   padding: 50px 0 160px;
   background: #272931;
 }
-.fiat-sec .fiat-top {
+.fiat-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.fiat-sec .fiat-top .top-left .blue-btn {
+.fiat-top .top-left .blue-btn {
   padding: 9px 30px;
   border-radius: 5px;
   margin-right: 65px;
@@ -318,10 +318,10 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   background: #EAECEF;
   border-radius: 5px;
 }
-.fiat-sec .fiat-block {
+.fiat-block {
   margin-top: 55px;
 }
-.fiat-sec .fiat-block span.fiat-span {
+.fiat-block span.fiat-span {
   display: inline-block;
   font-family: 'Ubuntu';
   margin-bottom: 7px;
@@ -330,10 +330,10 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   line-height: 137.9%;
   color: #FFFFFF;
 }
-.fiat-sec .fiat-rov {
+.fiat-rov {
   justify-content: center;
 }
-.fiat-sec .fiat-block .input-group input {
+.fiat-block .input-group input {
   height: 53px;
   background: #383B44;
   border-radius: 5px 0 0 5px;
@@ -344,7 +344,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   border: transparent;
   padding: 10px 23px;
 }
-.fiat-sec .fiat-block .input-group button {
+.fiat-block .input-group button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,27 +355,31 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   border-radius: 0 5px 5px 0;
   position: relative;
 }
-.fiat-sec .fiat-block .input-group button.show span img {
+.fiat-block .input-group button.show span img {
   transform: rotate(180deg);
 }
-.fiat-sec .fiat-block .input-group .dropdown-menu {
+.fiat-block .input-group button:focus {
+  margin-left: 0;
+  border: none;
+}
+.fiat-block .input-group .dropdown-menu {
   width: 157px;
   background: #383B44;
 }
 
-.fiat-sec .fiat-block .input-group .dropdown-menu li .dropdown-item {
+.fiat-block .input-group .dropdown-menu li .dropdown-item {
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
   padding: 5px 10px;
 }
-.fiat-sec .fiat-block .input-group .dropdown-menu li .dropdown-item img {
+.fiat-block .input-group .dropdown-menu li .dropdown-item img {
   margin-right: 10px;
 }
-.fiat-sec .fiat-block .input-group .dropdown-menu li .dropdown-item:hover {
+.fiat-block .input-group .dropdown-menu li .dropdown-item:hover {
   background: #1F2128;
 }
-.fiat-sec .fiat-block .input-group button:after {
+.fiat-block .input-group button:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -389,7 +393,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   padding: 0;
   border: none;
 }
-.fiat-sec .fiat-block .input-group button span {
+.fiat-block .input-group button span {
   display: inline-block;
   margin-left: 13px;
   font-family: 'Ubuntu';
@@ -398,23 +402,28 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   line-height: 137.9%;
   color: #FFFFFF;
 }
-.fiat-sec .fiat-block .input-group button span img {
+.fiat-block .input-group button span img {
   margin-left: 15px;
 }
 
-.fiat-sec .exchange-btn {
+.exchange-btn {
   text-align: center;
 }
-.fiat-sec .swap-exchange {
+.swap-exchange {
   margin-top: 20px;
 }
-.fiat-sec .swap-exchange svg path {
+.swap-exchange svg path {
   transition: .3s all ease;
 }
-.fiat-sec .swap-exchange:hover svg path {
+.swap-exchange:hover svg path {
   fill: #fff;
 }
-.fiat-sec .fiat-amount-btn button {
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 0;
+  border: none;
+}
+.form-btn button,
+.fiat-amount-btn button {
   text-align: center;
   width: 100%;
   padding: 16px;
@@ -428,10 +437,12 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #B7BDC6;
   margin-bottom: 34px;
 }
-.fiat-sec .fiat-amount-btn button:hover {
-  background: #383B44;
+.form-btn button:hover,
+.fiat-amount-btn button:hover {
+  background: #505154;
+  color: #fff;
 }
-.fiat-sec .fiat-exchange-btn button {
+.fiat-exchange-btn button {
   width: 100%;
   padding: 16px;
   border-radius: 5px;
@@ -472,34 +483,213 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   width: 100%;
   border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 1601px) {
-  header {
-    /* height: 100vh; */
-  }
+/* /////////////////////// */
+.processing-sec {
+  padding: 80px 0 180px;
 }
+.processing-sec .processing-table h4 {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 57px;
+  color: #FAFAFA;
+}
+.processing-sec .processing-table table p span,
+.processing-sec .processing-table table .title-span {
+  display: inline-block;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.processing-sec .processing-table table .title-span {
+  margin-bottom: 13px;
+}
+.processing-sec .processing-table table tbody tr {
+  border-color: #E2E2E2;
+}
+.processing-sec .processing-table table tbody tr td {
+  padding: 24px 10px;
+}
+.processing-sec .processing-table table tbody tr td p {
+  display: flex;
+  align-items: center;
+}
+.processing-sec .processing-table table tbody tr td p img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.processing-sec .processing-table table tbody tr td .pro-head {
+  display: flex;
+  flex-direction: column;
+}
+.processing-sec .processing-table table tbody tr td .pro-head.left {
+  align-items: flex-end;
+}
+.processing-sec .processing-table table tbody tr td p span.status {
+  font-weight: 500;
+  font-size: 16px;
+}
+.processing-sec .processing-table table tbody tr td p span.status.completed {
+  color: #4CC900;
+}
+.processing-sec .processing-table table tbody tr td p span.status.rejected {
+  color: #E01F1F;
+}
+.processing-sec .processing-table table tbody tr td p span.status.in-processing {
+  color: #1E75C3;
+}
+/* /////////////////////// */
+.back a {
+  font-family: 'Ubuntu';
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.deposit-sec {
+  padding: 53px 0 130px;
+}
+.deposit-sec .deposit-left {
+  margin-bottom: 24px;
+  text-align: center;
+  padding-right: 80px;
+}
+.deposit-sec .deposit-left.one .deposit-head {
+  background: linear-gradient(90deg, #00E2F2 0%, #008AC8 100%);
+}
+.deposit-sec .deposit-left .deposit-head {
+  border-radius: 15px 15px 0 0;
+  background: #008AC8;
+}
+.deposit-sec .deposit-left .deposit-head p {
+  font-family: 'Ubuntu';
+  padding: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.deposit-sec .deposit-left .deposit-text {
+  padding: 20px 30px;
+  background: #383B44;
+}
+.deposit-sec .deposit-left .deposit-text p {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+
+.deposit-sec .deposit-right .deposit-num {
+  display: flex;
+  align-items: center;
+  background: #383B44;
+  border-radius: 5px;
+  padding: 20px 32px;
+  margin-bottom: 60px;
+}
+.deposit-sec .deposit-right .deposit-num > span {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 137.9%;
+  color: #FFFFFF;
+  margin-right: 26px;
+}
+.deposit-sec .deposit-right .deposit-num p {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 137.9%;
+  color: #868686;
+}
+.deposit-sec .deposit-right .deposit-num p img {
+  height: 30px;
+  width: 30px;
+  margin-right: 26px;
+  border-radius: 50%;
+}
+.deposit-sec .deposit-right .deposit-link span {
+  display: inline-block;
+  font-family: 'Ubuntu';
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.deposit-sec .deposit-right .deposit-qr img {
+  width: 172px;
+  height: 172px;
+}
+.deposit-sec .deposit-right .copy-link-btn a {
+  margin-top: 34px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+/* ///// */
+.exchange-sec .fiat-block {
+  margin-top: 0;
+}
+.exchange-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.exchange-info .info-left {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media only screen and (max-width: 480px) {} */
