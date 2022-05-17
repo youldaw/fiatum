@@ -1066,19 +1066,159 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .modal .forgot-pass a:hover {
   color: #fff;
 }
+/* //////////////// */
+.advanced-sec {
+  padding: 70px 0 45px;
+}
+.advanced-sec .advanced-block {
+  padding: 35px;
+  background: #1F2128;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.advanced-sec .advanced-block .in-title h3 {
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
 
+.advanced-sec .advanced-block .form-group {
+  margin-bottom: 16px;
+}
+.advanced-sec .advanced-block .form-group > span {
+  display: block;
+  font-family: 'Ubuntu';
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.advanced-sec .advanced-block .form-group input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  background: #383B44;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Ubuntu';
+}
+.advanced-sec .advanced-block .advan-title h4 {
+  text-align: center;
+  font-family: 'Ubuntu';
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  background: linear-gradient(90deg, #00E2F2 0%, #008AC8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
+.form-checkbock .control {
+  white-space: nowrap;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background: #FFFFFF;
+  border: 1px solid #B8B8B8;
+  border-radius: 1px;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #fff;
+}
+.control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: linear-gradient(90deg, #00E2F2 0%, #008AC8 100%);
+}
+.control input:disabled ~ .control__indicator {
+  background: #fff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
 
+.advanced-sec .advanced-block p {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-right: 25px;
+  white-space: nowrap;
+}
+.advanced-sec .advanced-block .in-form {
+  margin-top: 30px;
+}
+.advanced-sec .advanced-block .in-form .form-col {
+  display: flex;
+  align-items: center;
+}
+.advanced-sec .advanced-block .in-form .form-col .form-group {
+  width: 100%;
+  margin-bottom: 0;
+}
+.advanced-sec .advanced-block .purpose.two {
+  margin-top: 32px;
+}
 
-
-
-
-
-
-
-
-
-
+.advanced-sec .advan-con {
+  background: #1F2128;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 40px 15px;
+  margin-top: 24px;
+}
 
 
 
