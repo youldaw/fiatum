@@ -26,13 +26,28 @@
 											<a class="nav-link" href="#">Profile</a>
 										</li>
                                         <li class="nav-item">
-											<a class="nav-link" href="#">Card</a>
+											<a class="nav-link" href="#">Card <img src="images/dropdow-arrow.svg" alt=""></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Card-1</a></li>
+                                                <li><a href="#">Card-2</a></li>
+                                                <li><a href="#">Card-3</a></li>
+                                            </ul>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">IBAN</a>
+											<a class="nav-link" href="#">IBAN <img src="images/dropdow-arrow.svg" alt=""></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">IBAN-1</a></li>
+                                                <li><a href="#">IBAN-2</a></li>
+                                                <li><a href="#">IBAN-3</a></li>
+                                            </ul>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Crypto</a>
+											<a class="nav-link" href="#">Crypto <img src="images/dropdow-arrow.svg" alt=""></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Crypto-1</a></li>
+                                                <li><a href="#">Crypto-2</a></li>
+                                                <li><a href="#">Crypto-3</a></li>
+                                            </ul>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="#">Exchange</a>
@@ -83,6 +98,9 @@
                             <div class="title">
                                 <h2>Advanced settings</h2>
                             </div>
+                            <div class="fiat-info">
+                                <p><img src="images/tick_icon.svg" alt=""> Company data</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,7 +112,7 @@
                         <div class="col-lg-6">
                             <div class="advanced-block advanced-left">
                                 <div class="in-title">
-                                    <h3>Personal information</h3>
+                                    <h3>Company information.</h3>
                                 </div>
                                 
                                 <div class="row">
@@ -106,8 +124,8 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <span>Surname:</span>
-                                            <input type="text" name="surname" id="surname">
+                                            <span>Legal form:</span>
+                                            <input type="text" name="legal" id="legal">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -127,14 +145,14 @@
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <span>Type of ID:</span>
-                                            <input type="text" name="id" id="id">
+                                            <span>Type of Document:</span>
+                                            <input type="text" name="type-doc" id="type-doc">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <span>Issue Date:</span>
-                                            <input type="text" name="issue-date" id="issue-date">
+                                            <span>Registration issue Date:</span>
+                                            <input type="text" name="reg-date" id="reg-date">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -192,6 +210,32 @@
                                         <div class="form-group">
                                             <span>E-mail:</span>
                                             <input type="email" name="email" id="email">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <span>Website:</span>
+                                            <input type="text" name="site" id="site">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <span>Type of business:</span>
+                                            <input type="text" name="site" id="site">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <span>Main partner:</span>
+                                            <input type="text" name="partner" id="partner">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <span>Country of MP:</span>
+                                            <input type="text" name="mp" id="mp">
                                         </div>
                                     </div>
                                 </div>
@@ -345,7 +389,7 @@
                                     </div>
                                 </div>
 
-                                <div class="purpose two">
+                                <div class="purpose two three">
                                     <div class="advan-title">
                                         <h4>Monthly volume estimation</h4>
                                     </div>
@@ -360,7 +404,7 @@
                                             <span>Cards</span>
                                             <input type="text">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mb-0">
                                             <span>IBAN</span>
                                             <input type="text">
                                         </div>
@@ -371,13 +415,65 @@
                     </div>
                 </div>
 
-                <div class="container-fluid advan-con">
+                <div class="advan-con">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="doc-files">
                                     <h4>Documents and Files</h4>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="id-file">
+                                    <p>ID file:*</p>
+                                    <div class="form-group files-block">
+                                        <a href="#!" class="download">Download uploaded ID file</a>
+                                        <label class="filelabel blue-btn">
+                                            <span>Upload another file</span>
+                                            <input class="FileUpload1" id="FileInput" name="booking_attachment" type="file"/>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="id-file">
+                                    <p>Address Proof file:*</p>
+                                    <div class="form-group files-block">
+                                        <a href="#!" class="download">Download uploaded ID file</a>
+                                        <label class="filelabel blue-btn">
+                                            <span>Upload another file</span>
+                                            <input class="FileUpload1" id="FileInput" name="booking_attachment" type="file"/>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="doc-end">
+                                    <span>Security question</span>
+                                    <a href="#!" class="blue-btn">Forgot answer</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="doc-end">
+                                    <span>Google authenticator</span>
+                                    <a href="#!" class="blue-btn">Lost access</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="doc-end">
+                                    <span>Save to .pdf <img src="images/pdf-icon.svg" alt=""></span>
+                                    <a href="#!" class="blue-btn">Save</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 advan-btn">
+                                <button type="submit" id="advanced-send" class="blue-btn">Submit</button>
                             </div>
                         </div>
                     </div>
