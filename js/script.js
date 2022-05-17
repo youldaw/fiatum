@@ -2,6 +2,59 @@ $(document).ready(function () {
     
     $('input[name=phone]').mask('+7 (999) 999-99-99');
 
+
+    $('.card-slide').owlCarousel({
+        loop:true,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:100,
+        nav:false,
+        dots:false,
+        center: true,
+        smartSpeed:900,
+        items:3,
+        // navText: ['<img src="images/slide-left-arrow.svg" alt="">','<img src="images/slide-right-arrow.svg" alt="">'],
+        responsive:{
+            0:{
+                items:1,
+                margin: 15,
+            },
+            600:{
+                items:2,
+                margin: 15,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    });
+
+    $('.crypto-slide').owlCarousel({
+        loop:true,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:100,
+        nav:false,
+        dots:false,
+        center: true,
+        smartSpeed:900,
+        items:3,
+        // navText: ['<img src="images/slide-left-arrow.svg" alt="">','<img src="images/slide-right-arrow.svg" alt="">'],
+        responsive:{
+            0:{
+                items:1,
+                margin: 15,
+            },
+            600:{
+                items:2,
+                margin: 15,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    });
+
     
     $('#search-btn').on('click',function(e){
         e.preventDefault();

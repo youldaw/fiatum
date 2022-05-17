@@ -62,6 +62,19 @@ img {
   transition: 0.3s all ease;
 }
 
+.owl-drag {
+  overflow: hidden;
+}
+.owl-item {
+  float: left;
+}
+.owl-dots {
+  display: none;
+}
+.owl-nav {
+  display: none;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -648,10 +661,218 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 25px;
 }
-.exchange-info .info-left {
-  
+.exchange-info .info-right p,
+.exchange-info .info-left span,
+.exchange-info .info-left p {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 155%;
+  color: #FFFFFF;
 }
+.exchange-info .info-right p {
+  line-height: 18px;
+}
+/* /////////////// */
+.card-sec {
+  padding: 80px 0 120px;
+}
+.card-sec .card-rov {
+  justify-content: center;
+}
+
+.card-sec .card-block {
+  text-align: center;
+}
+.card-sec .card-block .card-img {
+  margin-bottom: 60px;
+}
+.card-sec .card-block .card-img img {
+  border-radius: 10px;
+}
+.card-sec .card-block .card-form .form-group {
+  margin-bottom: 20px;
+}
+.card-sec .card-block .card-form input {
+  background: #383B44;
+  border-radius: 5px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137.9%;
+  color: #fff;
+  width: 100%;
+  border: none;
+}
+.card-sec .card-block .card-info .card-btn .blue-btn,
+.card-sec .card-block .card-form .blue-btn {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+/* //////////// */
+.card-sec .card-slide {
+  position: relative;
+  padding: 30px 0 90px;
+}
+.card-sec .card-slide .owl-item.center .card-img img {
+  transform: scale(1.2);
+}
+.card-sec .card-slide .card-img img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-sec .card-block .card-info .card-email p,
+.card-sec .card-block .card-info .card-name p {
+  background: #383B44;
+  border-radius: 5px;
+  width: 100%;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137.9%;
+  text-align: center;
+  color: #B7BDC6;
+  margin-bottom: 20px;
+}
+/* ///////////// */
+.card-sec.no-card {
+  padding-top: 100px;
+}
+.card-sec.no-card .card-flex .card-img img {
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 90%;
+}
+.card-sec.no-card .card-flex .card-img.center {
+  margin: 0 50px;
+}
+.card-sec.no-card .card-flex .card-img.center img {
+  transform: scale(1.2);
+}
+.card-sec.no-card .card-info p {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 137.9%;
+  color: #FFFFFF;
+}
+
+/* =============================== */
+/* /////////////// */
+.crypto-sec {
+  padding: 80px 0 120px;
+}
+.crypto-sec .crypto-rov {
+  justify-content: center;
+}
+.card-sec .card-flex,
+.crypto-sec .crypto-flex {
+  justify-content: center;
+}
+
+.crypto-sec .crypto-block {
+  text-align: center;
+}
+.crypto-sec .crypto-block .crypto-img {
+  margin-bottom: 60px;
+}
+.crypto-sec .crypto-block .crypto-img img {
+  border-radius: 10px;
+}
+.crypto-sec .crypto-block .crypto-form .form-group {
+  margin-bottom: 20px;
+}
+.crypto-sec .crypto-block .crypto-form input {
+  background: #383B44;
+  border-radius: 5px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137.9%;
+  color: #fff;
+  width: 100%;
+  border: none;
+}
+.crypto-sec .crypto-block .crypto-info .crypto-btn .blue-btn,
+.crypto-sec .crypto-block .crypto-form .blue-btn {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+/* //////////// */
+.crypto-sec .crypto-slide {
+  position: relative;
+  padding: 30px 0 90px;
+}
+.crypto-sec .crypto-slide .owl-item.center .crypto-img img {
+  transform: scale(1.2);
+}
+.crypto-sec .crypto-slide .crypto-img img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.crypto-sec .crypto-block .crypto-info .crypto-email p,
+.crypto-sec .crypto-block .crypto-info .crypto-name p {
+  background: #383B44;
+  border-radius: 5px;
+  width: 100%;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137.9%;
+  text-align: center;
+  color: #B7BDC6;
+  margin-bottom: 20px;
+}
+/* ///////////// */
+.crypto-sec.no-crypto {
+  padding-top: 100px;
+}
+.crypto-sec.no-crypto .crypto-flex .crypto-img img {
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 90%;
+}
+.crypto-sec.no-crypto .crypto-flex .crypto-img.center {
+  margin: 0 50px;
+}
+.crypto-sec.no-crypto .crypto-flex .crypto-img.center img {
+  transform: scale(1.2);
+}
+.crypto-sec.no-crypto .crypto-info p {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 137.9%;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
