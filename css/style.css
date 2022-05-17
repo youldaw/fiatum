@@ -220,7 +220,7 @@ header .navbar ul li ul li:hover a {
 header .navbar-expand-lg .navbar-nav.navbar-right .nav-link {
   font-weight: 600;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 20px;
   letter-spacing: 0.75px;
   background: linear-gradient(90deg, #00E2F2 0%, #008AC8 100%);
   -webkit-background-clip: text;
@@ -1460,29 +1460,230 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 
 
 
+@media only screen and (max-width: 480px) {
+  header.index {
+    padding-bottom: 0;
+  }
+  header {
+    padding: 15px 0;
+  }
+  .mob {
+    display: block;
+  }
+  header .mob .menu-opener {
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    transition: .3s all ease;
+  }
+  header .mob .menu-opener span{
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 4px;
+  }
+  header .mob .menu-opener span{
+    transition: .3s all ease;
+  }
+  header .mob .menu-opener span:last-child{
+    margin-bottom: 0;
+  }
+  header .mob .menu-opener.active span.one{
+    display: none;
+  }
+  header .mob .menu-opener.active span.two{
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+  }
+  header .mob .menu-opener.active span.three{
+    transform: rotate(-45deg);
+  }
+  
+  header .navbar-collapse {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    display: none;
+  }
+  header .navbar-collapse.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #505154;
+    padding: 30px 20px 32px 20px;
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+  header .navbar {
+    position: unset;
+  }
+  header .navbar .container-fluid {
+    padding: 0;
+  }
+  header .navbar-expand-lg .navbar-nav {
+    align-items: flex-start;
+  }
+  header .navbar-expand-lg .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media only screen and (max-width: 480px) {} */
+  .main-con {
+    margin-top: 30px;
+  }
+  .main-con .title h1 {
+    width: auto;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .main-con .order-card-btn {
+    margin: 30px 0 40px;
+  }
+  .main-con .head-items {
+    margin-bottom: 10px;
+    height: auto;
+  }
+  .main-con .main-img {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .main-con .main-img img {
+    width: 90%;
+  }
+  header .navbar ul li ul {
+    z-index: 10;
+  }
+  .advanced-sec .advanced-block {
+    padding: 30px 20px;
+  }
+  .advanced-sec .advanced-block .in-form .form-col {
+    display: block;
+  }
+  .advanced-sec .advanced-left {
+    margin-bottom: 20px;
+  }
+  .advanced-sec .advanced-block p {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .advanced-sec .files-block {
+    display: block;
+  }
+  .advanced-sec .files-block .blue-btn {
+    margin-left: 0;
+  }
+  .advanced-sec .files-block a {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .advanced-sec .id-file > p {
+    margin-bottom: 20px;
+  }
+  .advanced-sec .id-file.two {
+    margin-top: 40px;
+  }
+  .advanced-sec .doc-end span {
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .advanced-sec .advan-btn button {
+    width: 100%;
+  }
+  .fiat-exchange {
+    padding: 30px 0;
+  }
+  .title h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .fiat-exchange .title {
+    margin-bottom: 0;
+  }
+  .balance-sec .balance-item {
+    margin-bottom: 20px;
+  }
+  .processing-sec .processing-table,
+  .balance-sec .balance-table {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .balance-sec table tbody tr td .table-request a,
+  .balance-sec table tbody tr td .table-search a,
+  .balance-sec table tbody tr td .table-total p,
+  .balance-sec table thead tr th {
+    white-space: nowrap;
+  }
+  .bring-friend .bring-rov {
+    margin: 40px 0 0;
+  }
+  .bring-friend .bring-link p {
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+  }
+  .deposit-sec .deposit-left {
+    padding-right: 0;
+  }
+  .fiat-exchange .fiat-info {
+    flex-direction: column;
+  }
+  .fiat-exchange .fiat-info p {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .crypto-sec.no-crypto .crypto-flex .crypto-img.center,
+  .card-sec.no-card .card-flex .card-img.center {
+    margin: 0 15px;
+  }
+  .crypto-sec.no-crypto .crypto-info p,
+  .card-sec.no-card .card-info p {
+    margin-top: 50px;
+  }
+  .crypto-sec {
+    padding: 60px 0;
+  }
+  .processing-sec .processing-table h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .processing-sec .processing-table table p span,
+  .processing-sec .processing-table table .title-span,
+  .processing-sec .processing-table table .title-span {
+    white-space: nowrap;
+  }
+  .settings-sec .settings-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .settings-sec .settings-block .settings-left {
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+  .settings-sec .settings-block .settings-right {
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 0;
+  }
+  .modal-dialog {
+    width: 100%;
+  }
+  .modal-content {
+    padding: 25px 15px;
+    margin: 0 5px;
+  }
+  .modal .body-title {
+    margin-bottom: 20px;
+  }
+  .crypto-sec .crypto-slide .owl-item.center .crypto-img img,
+  .card-sec .card-slide .owl-item.center .card-img img {
+    transform: scale(1);
+  }
+}

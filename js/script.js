@@ -16,7 +16,7 @@ $(document).ready(function () {
         // navText: ['<img src="images/slide-left-arrow.svg" alt="">','<img src="images/slide-right-arrow.svg" alt="">'],
         responsive:{
             0:{
-                items:1,
+                items:1.2,
                 margin: 15,
             },
             600:{
@@ -42,7 +42,7 @@ $(document).ready(function () {
         // navText: ['<img src="images/slide-left-arrow.svg" alt="">','<img src="images/slide-right-arrow.svg" alt="">'],
         responsive:{
             0:{
-                items:1,
+                items:1.2,
                 margin: 15,
             },
             600:{
