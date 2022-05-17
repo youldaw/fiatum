@@ -852,28 +852,220 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   line-height: 137.9%;
   color: #FFFFFF;
 }
+/* ///////////////////////////// */
+.settings-sec {
+  padding: 80px 0 120px;
+}
+.settings-sec > .title h4 {
+  margin-bottom: 25px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FAFAFA;
+}
+.settings-sec .settings-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid #E2E2E2;
+}
+.settings-sec .settings-block .settings-right,
+.settings-sec .settings-block .settings-left {
+  display: flex;
+  align-items: center;
+}
+.settings-sec .settings-block .settings-left {
+  padding-left: 25px;
+}
+.settings-sec .settings-block .settings-right {
+  padding-right: 25px;
+}
+.settings-sec .settings-left .settings-icon {
+  margin-right: 40px;
+}
+.settings-sec .settings-left .settings-info p {
+  font-family: 'Ubuntu';
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FAFAFA;
+}
+.settings-sec .settings-left .settings-info span {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #A8A8A8;
+}
+.settings-sec .settings-advanced a,
+.settings-sec .settings-right .settings-date p,
+.settings-sec .settings-right .settings-current p {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FAFAFA;
+}
+.settings-sec .settings-right .settings-current img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.settings-sec .settings-right .change-btn a {
+  padding: 9px 18px;
+  margin-left: 100px;
+}
+.settings-sec .settings-advanced a {
+  display: inline-block;
+  margin-top: 18px;
+}
+/* ////////////////// */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+}
+.modal-dialog {
+  max-width: 425px;
+}
+.modal-body {
+  padding: 0;
+}
+.modal-header {
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.modal-content {
+  background: #272931;
+  border-radius: 10px;
+  padding: 30px 25px 40px;
+}
+.modal .close-btn {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+.moda-title {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FAFAFA;
+}
+.modal .body-title {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #AAAAAA;
+  margin-bottom: 45px;
+}
+.modal .modal-body form .form-group > span {
+  font-family: 'Ubuntu';
+  display: inline-block;
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FAFAFA;
+}
+.modal .modal-body form .form-group.two {
+  margin-top: 23px;
+}
+.modal .modal-body form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #797979;
+  border-radius: 5px;
+  background: #272931;
+  color: #fff;
+  transition: .3s all ease;
+}
+.modal .modal-body form input:hover {
+  border-color: #A8A8A8;
+}
+.modal .forgot-pass a,
+.modal .modal-body form input::placeholder {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #797979;
+}
+.modal .modal-body form .change-modal-btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.modal .modal-body form .change-modal-btn button,
+.modal .modal-body form .change-modal-btn a {
+  width: 100%;
+  text-align: center;
+  height: 46px;
+  padding: 12px;
+}
+.modal .modal-body form .change-modal-btn a {
+  background: #383B44;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137.9%;
+  color: #797979;
+  margin-right: 5px;
+}
+.modal .modal-body form .change-modal-btn button {
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.modal .modal-body form .change-modal-btn a:hover {
+  background: #505154;
+  color: #fff;
+}
+.modal .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .avatar img {
+  height: 124px;
+  width: 124px;
+  border-radius: 50%;
+}
+.filelabel {
+  width: 124px;
+  margin: auto;
+  border-radius: 5px;
+  display: block;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
+#FileInput{
+  display:none;
+}
+.filelabel img.add {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 12px;
+  right: 2px;
+}
+.modal .forgot-pass a {
+  margin-top: 20px;
+}
+.modal .forgot-pass a:hover {
+  color: #fff;
+}
 
 
 
